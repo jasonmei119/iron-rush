@@ -126,20 +126,20 @@ h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
 	color: #c20202;
 }
 
-#tooplate-body-wrapper {
+.tooplate-body-wrapper {
 	width: 100%;
 	background: url(../images/tooplate-header.jpg) top center no-repeat;
 }
 
-#tooplate-wrapper {
-	width: 960px;
+.tooplate-wrapper {
+	max-width: 960px;
 	padding: 0 10px;
 	margin: 0 auto;
 	background: url(../images/tooplate-header.jpg) top center no-repeat;
 }
 
-#tooplate-top-bar {
-	width: 960px;
+.tooplate-top-bar {
+	max-width: 960px;
 	height: 40px;
 	padding: 5px 0;
 }
@@ -162,22 +162,22 @@ a.twitter { background: url(../images/tooplate-twitter.png) center right no-repe
 a.facebook { background: url(../images/facebook.png) center right no-repeat }
 a.social-btn:hover { color: #bd9213 }
 
-#tooplate-header {
-	width: 960px;
+.tooplate-header {
+	max-width: 960px;
 	height: 80px;
 	padding: 10px 0;
 }
 
-#site-title {
+.site-title {
 	float: left;
 }
 
-#site-title h1 {
+.site-title h1 {
 	margin: 0;
 	padding: 20px 0 0;
 }
 
-#site-title h1 a {
+.site-title h1 a {
 	display: block;
 	width: 190px;
 	height: 40px;
@@ -188,26 +188,26 @@ a.social-btn:hover { color: #bd9213 }
 
 /* menu */
 
-#tooplate-menu {
+.tooplate-menu {
 	float: right;
 	width: 625px;
 	height: 65px;
 	margin: 0 auto;
 }
 
-#tooplate-menu ul {
+.tooplate-menu ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-#tooplate-menu ul li {
+.tooplate-menu ul li {
 	padding: 0;
 	margin: 0;
 	display: inline;
 }
 
-#tooplate-menu ul li a {
+.tooplate-menu ul li a {
 	float: left;
 	display: block;
 	width: 125px;
@@ -222,7 +222,7 @@ a.social-btn:hover { color: #bd9213 }
 	border: none;
 }
 
-#tooplate-menu ul li a:hover, #tooplate-menu ul .current {
+.tooplate-menu ul li a:hover, #tooplate-menu ul .current {
 	color: #fff;
 	background: url(../images/tooplate-menu-hover.png) bottom center no-repeat;
 }
@@ -231,37 +231,47 @@ a.social-btn:hover { color: #bd9213 }
 
 /* end of menu */
 
-#tooplate-middle {
+.tooplate-middle {
 	clear: both;
-	width: 900px;
-	height: 240px;
+	max-width: 900px;
+	max-height: 240px;
 	padding: 37px 30px 51px 30px;
 	overflow: hidden;
 	background: url(../images/tooplate-middle.png) no-repeat;
 }
 
-#tooplate-middle-subpage {
+.tooplate-middle-subpage {
 	clear: both;
-	width: 960px;
-	height: 120px;
+	max-width: 960px;
+	max-height: 120px;
 	padding: 15px 0;
 	margin-bottom: 20px;
 	background: url(../images/tooplate-divider.jpg) top repeat-x;
 }
 
-#tooplate-middle-subpage h2 {
+.tooplate-middle-subpage h2 {
 	color: #bd9213;
 }
 
-#tooplate-middle-subpage p {
+.tooplate-middle-subpage p {
 	font-size: 18px;
 	color: #7f6d4e;
 }
 
+.slider-img {
+	max-width: 100%;
+}
+
 #tooplate-main {
 	clear: both;
-	width: 960px;
+	max-width: 960px;
 	padding: 20px 0;
+}
+
+@media (max-width: 660px){
+	.tooplate-middle, #slider, #slider-img{
+		display: none;
+	}
 }
 
 .col-w960 { width: 960px; margin-bottom: 40px }
@@ -276,8 +286,8 @@ a.social-btn:hover { color: #bd9213 }
 	display: block;
 	clear: both;
 	position: relative;
-	width: 290px;
-	height: 140px;
+	max-width: 290px;
+	max-height: 140px;
 	padding: 4px;
 	border: 1px solid #ccc;
 	margin-bottom: 10px;
@@ -295,6 +305,10 @@ a.social-btn:hover { color: #bd9213 }
 
 .fp-lp-box  span a {
 	color: #fff;
+}
+
+.fp-lp-box-image {
+	max-width: 100%;
 }
 
 .post-box {
@@ -318,8 +332,8 @@ a.social-btn:hover { color: #bd9213 }
 
 .post-box img {
 	float: right;
-	width: 160px;
-	height: 160px;
+	max-width: 160px;
+	max-height: 160px;
 	padding: 4px;
 	border: 1px solid #ccc;
 	margin-left: 30px;
@@ -329,25 +343,25 @@ a.social-btn:hover { color: #bd9213 }
 	float: right;
 }
 
-#map img {
-	width: 300px;
-	height: 190px;
+.map img {
+	max-width: 300px;
+	max-height: 190px;
 	border: 1px solid #999;
 	padding: 5px;
 }
 
-#contact-form {
-	width: 400px;
+.contact-form {
+	max-width: 400px;, 
 	padding: 0px;
 }
 
-#contact-form form {
+.contact-form form {
 	margin: 0px;
 	padding: 0px;
 }
 
-#contact-form form .input-field {
-	width: 300px;
+.contact-form form .input-field {
+	max-width: 300px;
 	padding: 5px;
 	background: #fff;
 	border: 1px solid #ccc;
@@ -357,17 +371,17 @@ a.social-btn:hover { color: #bd9213 }
 	margin-top: 5px;
 }
 
-#contact-form form label {
+.contact-form form label {
 	display: block;
-	width: 100px;
+	max-width: 100px;
 	margin-right: 10px;
 	font-size: 14px;
 	color: #333;
 }
 
-#contact-form form textarea {
-	width: 388px;
-	height: 200px;
+.contact-form form textarea {
+	max-width: 388px;
+	max-height: 200px;
 	background: #fff;
 	border: 1px solid #ccc;
 	padding: 5px;
@@ -377,7 +391,7 @@ a.social-btn:hover { color: #bd9213 }
 	margin-top: 5px;
 }
 
-#contact-form form .submit-btn {
+.contact-form form .submit-btn {
 	margin: 10px 0px;
 	padding: 5px 14px;
 	background: #fff;
@@ -386,69 +400,69 @@ a.social-btn:hover { color: #bd9213 }
 	font-size: 13px;
 }
 
-#gallery {
+.gallery {
 	margin: 0;
 	padding: 0;
 }
 
-#gallery ul {
+.gallery ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-#gallery ul li {
+.gallery ul li {
 	position: relative;
 	display: block;
 	float: left;
-	width: 280px;
+	max-width: 280px;
 	margin: 0 30px 30px 0;
 	padding: 8px;
 	border: 1px solid #ccc;
 }
 
-#gallery ul .lmb {
+.gallery ul .lmb {
 	margin: 0 0 30px 0;
 }
 
-#gallery ul li a img {
+.gallery ul li a img {
 	border: 1px solid #ccc;
 	margin-bottom: 5px;
 }
 
-#gallery ul li  span {
+.gallery ul li  span {
 	position: absolute;
 	right: 0;
 	bottom: 10px;
-	width: 100px;
-	height: 24px;
+	max-width: 100px;
+	max-height: 24px;
 	text-align: center;
 	background: url(../images/tooplate-lp-btn.png);
 }
 
-#gallery ul li span a {
+.gallery ul li span a {
 	color: #fff;
 }
 
-#tooplate-footer-wrapper {
-	width: 100%;
+.tooplate-footer-wrapper {
+	max-width: 100%;
 	background: #1f1b1a;
 }
 
-#tooplate-footer {
-	width: 960px;
+.tooplate-footer {
+	max-width: 960px;
 	padding: 30px 10px;
 	color: #8b773a;
 	margin: 0 auto;
 }
 
-#tooplate-copyright-wrapper {
+.tooplate-copyright-wrapper {
 	width: 100%;
 	background: #000000;
 }
 
-#tooplate-copyright {
-	width: 960px;
+.tooplate-copyright {
+	max-width: 960px;
 	padding: 10px;
 	color: #39302b;
 	margin: 0 auto;
